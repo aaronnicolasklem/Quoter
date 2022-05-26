@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
@@ -20,24 +22,25 @@
 </head>
 
 <body>
-    <div class="content-container">
-        <h1>Bonjour</h1>
-        <div class="quote-container">
-            <div class="quote-text">
+    
+        <div class="quote-container" id="quote-container">
+            <div class="quote-complete">
                 <i class="fas fa-quote-left"></i>
-                <span id="quote">blah blah</span>
+                <span id="quote-text"></span>
                 <i class="fas fa-quote-right"></i>
-                <p>-<span id="quote-author">person</span></p>
-                <p><span id="quote-source">memoir</span></p>
+                <p>~<span id="quote-author">person</span></p>
             </div>
             <div class="button-container">
-                <button class="" id="twitter" title="Tweet Quote"><i class="fab fa-twitter"></i></button>
-                <button id="new-quote">Another!</button>
+                <button class="" id="btnTwitter" title="Tweet Quote"><i class="fab fa-twitter"></i></button>
+                <button id="new-quote" onclick="selectQuote()">Another!</button>
             </div>
         </div>
-    </div>
+   
+    <div class="loader" id="loader"></div>
+    <script src="scripts.js"></script>
 </body>
 <footer>
     <a href="https://www.flaticon.com/free-icons/book" title="book icons">Book icons created by juicy_fish -
         Flaticon</a>
 </footer>
+</html>
